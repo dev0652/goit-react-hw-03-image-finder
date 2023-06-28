@@ -128,7 +128,7 @@ export default class App extends Component {
         )}
 
         {images.length > 0 && images.length < totalHits && !isLoading && (
-          <Button onClick={incrementPage} />
+          <Button onClick={incrementPage} isLoading={isLoading} />
         )}
       </Wrapper>
     );
